@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:app="http://schemas.android.com/apk/res-auto" 
+    xmlns:tools="http://schemas.android.com/tools" 
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="CREATE AN ENTRY"/>
+     
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    
+    <EditText
+        android:id="@+id/id_emp"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="Employee ID"/>
+            
+    <EditText
+        android:id="@+id/name_emp"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/id_emp"
+        android:hint="Name"/>
+                
+    <EditText
+        android:id="@+id/phone_emp"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/name_emp"
+        android:hint="Phone Number"/>
+        
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_emp"
+        android:gravity="bottom">
+    
+    <Button
+        android:id="@+id/Btn_Create"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="CREATE"    
+        android:layout_centerHorizontal="true"/>
+            
+    <Button
+        android:id="@+id/Btn_Update"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="UPDATE"    
+        android:layout_centerHorizontal="true"/>
+    </LinearLayout>
+                                  
+    </RelativeLayout>               
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_red_light"
+        android:text="DELETE AN ENTRY"/>
+     
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    
+    <EditText
+        android:id="@+id/removeid_emp"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="Enrollment ID"/>
+        
+    <Button
+        android:id="@+id/Btn_Delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/removeid_emp"
+        android:text="DELETE"  
+        android:layout_centerHorizontal="true"/>
+        
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+    
+    <Button
+        android:id="@+id/Btn_Read"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VIEW ALL RECORDS"    
+        android:layout_centerHorizontal="true"/>
+    </LinearLayout>
+</LinearLayout>
